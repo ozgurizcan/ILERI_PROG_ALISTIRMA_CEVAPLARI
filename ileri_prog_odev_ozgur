@@ -1,11 +1,3 @@
-#4.soru
-for i in range(100,1000):
-    s=str(i)
-    m=s[::-1]
-    if s==m:
-        print(s)
-
-
 #1.soru
 i=0
 for m in range(19,203,3):
@@ -14,6 +6,12 @@ for m in range(19,203,3):
     
 print(i)
 
+#4.soru
+for i in range(100,1000):
+    s=str(i)
+    m=s[::-1]
+    if s==m:
+        print(s)
 
 #5.soru
 for k in range(1000,10000):
@@ -87,7 +85,79 @@ for i in range(10,100):
     for a in range(10,100):
         if 11*(a+i)==int(str(i)+str(a)):
             print(str(i)+str(a))
+#13.soru
+
+def ikisayıyıyanyanagetirme(n,m):
+    return int(str(n)+str(m))
+
+def ikisayıyıtoplayıp11leçarpma(n,m):
+    return (n+m)*11
+
+for i in range(10,100):
+    for g in range(10,100):
+        if ikisayıyıyanyanagetirme(i,g)==ikisayıyıtoplayıp11leçarpma(i,g):
+            print(i,g)
+
+#14.soru  yanlış çıktı niye bilmiyorum.
+
+def carpımlarınolanikisayınınfarkınınenkucuğu(n):
+    k=[]
+
+    for i in range(1,n+1):
+        if n%i==0:
+            m=n/i
+            k.append(abs(m-i))
+    if abs(m-i)==min(k):
+                print(i,m)
+            
+carpımlarınolanikisayınınfarkınınenkucuğu(12)
+
+#15.soru
+
+def asalolma(n):
+    for i in range(2,n):
+        if n%i==0:
+            return False
+    return True
+m=0
+for i in range(10000,100000):
+    if asalolma(i):
+        m+=1
+
+print(m)
+
+#16.soru
+
+def asalolma(n):
+    for i in range(2,n):
+        if n%i==0:
+            return False
+    return True
+
+x=int(input("enter a number: "))
+if asalolma(x):
+    print("bu sayı asal")
+else:
+    print("asal değil")
+
 
 #17.soru
+def palindromiklik(n):
+    s=str(n)
+    m=s[::-1]
+    if s==m:
+        return True
+    else:
+        return False
+
+x=int(input("3 veya 4 basamaklı sayı gir: "))
+
+if palindromiklik(x):
+    print("palindromik")
+else:
+    print("değil")
+    
+
+
 
 
