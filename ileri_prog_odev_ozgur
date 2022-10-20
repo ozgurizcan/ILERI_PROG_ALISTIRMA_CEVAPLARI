@@ -1,0 +1,93 @@
+#4.soru
+for i in range(100,1000):
+    s=str(i)
+    m=s[::-1]
+    if s==m:
+        print(s)
+
+
+#1.soru
+i=0
+for m in range(19,203,3):
+    i+=m
+
+    
+print(i)
+
+
+#5.soru
+for k in range(1000,10000):
+    c=str(k)
+    p=c[::-1]
+    if c==p:
+        print(c)
+
+
+#6.soru
+o=0
+for i in range(1000,10000):
+    m=str(i)
+    if m[0]>m[3]:
+        o+=1
+
+        
+print(o)
+
+#7.soru
+l=0
+for i in range(100,1000):
+    u=str(i)
+    if int(u[0])+int(u[1])==int(u[2]):
+        l+=1
+
+        
+print(l)
+
+#8.soru
+g=0
+for i in range(100,1000,2):
+    a=str(i)
+    if a[0]==a[1] or a[1]==a[2] or a[0]==a[2]:
+        g+=1
+
+        
+print(g)
+
+#9.soru
+for i in range(1,1000):
+    m=str(i)+"000000"
+    if int(m[0])+int(m[1])+int(m[2])<9:
+        print(i,end=' ')
+
+#10.soru
+a=0
+for i in range(10000,100000):
+    c=str(i)
+    if c[0]==c[3] and c[1]==c[4]:
+        a+=1
+
+        
+print(a)
+
+#11.soru    niye en sonda print(max(a)) olmuyo
+for i in range(1,350):
+    if 125%i==200%i and 200%i==350%i and 125%i==350%i:
+        a=i
+
+print(a)
+
+#12.soru
+for i in range(1000,2005):
+    a=str(i)
+    if 2005-i==int(a[0])+int(a[1])+int(a[2])+int(a[3]):
+        print(i)
+
+#13.soru
+for i in range(10,100):
+    for a in range(10,100):
+        if 11*(a+i)==int(str(i)+str(a)):
+            print(str(i)+str(a))
+
+#17.soru
+
+
